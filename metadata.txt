@@ -1,0 +1,34 @@
+1. Identitas & Info Dasar
+Id: Identitas unik untuk setiap baris (Format: match_id_nama_tim).
+match_id: ID unik untuk satu pertandingan (satu pertandingan memiliki dua baris Id untuk masing-masing tim).
+date: Tanggal pertandingan dilaksanakan.
+gender: Jenis kelamin pemain (M untuk Pria, W untuk Wanita).
+team: Nama tim utama.
+opponent: Nama tim lawan.
+
+2. Kondisi Pertandingan
+is_home: Binary (1/0), apakah tim bermain di kandang sendiri.
+neutral: Binary (1/0), apakah pertandingan dimainkan di tempat netral.
+tournament: Nama kompetisi atau jenis turnamen (misal: Friendly, FIFA World Cup, dll).
+venue_country: Negara tempat pertandingan berlangsung.
+confederation_team/opp: Konfederasi sepak bola tim/lawan (misal: UEFA, CAF, CONMEBOL).
+
+3. Metrik Performa (Hanya tersedia lengkap di train.csv)
+elo_team / elo_opponent: Peringkat Elo masing-masing tim saat pertandingan.
+rank_team / rank_opponent: Peringkat FIFA masing-masing tim.
+team_points_last5 / last10: Poin yang dikumpulkan dalam 5 atau 10 pertandingan terakhir.
+team_gd_last5: Selisih gol (Goal Difference) dalam 5 pertandingan terakhir.
+team_win_rate_last10: Persentase kemenangan dalam 10 pertandingan terakhir.
+h2h_points_last5: Poin dari rekam jejak pertemuan kedua tim (Head to Head).
+days_since_last_match: Jumlah hari sejak pertandingan terakhir tim tersebut.
+
+4. Data Geografis & Sosio-Ekonomi
+population_team / opp: Populasi negara tim/lawan.
+gdp_per_capita_team / opp: Produk Domestik Bruto per kapita negara tim/lawan.
+altitude_venue: Ketinggian lokasi pertandingan di atas permukaan laut.
+distance_travel_team / opp: Estimasi jarak perjalanan yang ditempuh tim menuju lokasi.
+temperature_venue: Estimasi suhu udara di lokasi pertandingan.
+
+5. Target Variables
+team_goals: Jumlah gol yang dicetak oleh team.
+opp_goals: Jumlah gol yang dicetak oleh opponent.
